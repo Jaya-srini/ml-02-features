@@ -59,3 +59,11 @@ Pushing to GitHub automagically triggers an action to deploy the docs.
 - [ ] Accessible narrative
 - [ ] Images, tables, logs, or output conveying your work
 - [ ] GitHub About section linking to your GitHub Pages site
+
+
+## My Custom Project
+Applied this workflow to Seaborn's `tips` dataset, predicting `tip` (a
+continuous dollar amount) instead of the example's `body_mass_g`. This kept the same supervised regression approach but moved the domain from penguin biology to restaurant service. I constructed three non-leaky features from
+`total_bill`, `size`, and `day` — `bill_per_person`, `is_weekend`, and
+`party_size_class` — and confirmed with a scatterplot that `total_bill` is
+visibly correlated with `tip`.

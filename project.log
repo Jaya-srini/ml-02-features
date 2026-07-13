@@ -118,3 +118,115 @@ max         59.600000      21.500000         231.000000  6300.000000
 2026-07-13 01:08:25 | INFO | M02 | After features:   10
 2026-07-13 01:08:25 | INFO | M02 | Intended target:  body_mass_g
 2026-07-13 01:08:25 | INFO | M02 | ========================
+2026-07-13 01:33:51 | INFO | M02 | === RUN START ===
+2026-07-13 01:33:51 | INFO | M02 | project=M02
+2026-07-13 01:33:51 | INFO | M02 | repo_dir=ml-02-features
+2026-07-13 01:33:51 | INFO | M02 | python=3.14.6
+2026-07-13 01:33:51 | INFO | M02 | os=Darwin 23.6.0
+2026-07-13 01:33:51 | INFO | M02 | shell=zsh
+2026-07-13 01:33:51 | INFO | M02 | cwd=notebooks
+2026-07-13 01:33:51 | INFO | M02 | github_actions=False
+2026-07-13 01:33:51 | INFO | M02 | Confirming installation:
+2026-07-13 01:33:51 | INFO | M02 |   python:       3.14.6
+2026-07-13 01:33:51 | INFO | M02 |   pandas:       3.0.3
+2026-07-13 01:33:51 | INFO | M02 |   numpy:        2.5.1
+2026-07-13 01:33:51 | INFO | M02 |   scikit-learn: 1.9.0
+2026-07-13 01:33:51 | INFO | M02 |   seaborn:      0.13.2
+2026-07-13 01:33:51 | INFO | M02 |   matplotlib:   3.11.0
+2026-07-13 01:33:51 | INFO | M02 | Loading dataset: tips
+2026-07-13 01:33:51 | INFO | M02 | Loaded: 244 rows (instances), 7 columns
+2026-07-13 01:33:51 | INFO | M02 | The intended target is 'tip'.
+2026-07-13 01:33:51 | INFO | M02 | Any feature derived FROM the target would leak the answer. Avoid those.
+2026-07-13 01:33:51 | INFO | M02 | Per-column completeness and type:
+2026-07-13 01:33:51 | INFO | M02 |   total_bill           float64    present=100.0%  missing=0
+2026-07-13 01:33:51 | INFO | M02 |   tip                  float64    present=100.0%  missing=0
+2026-07-13 01:33:51 | INFO | M02 |   sex                  category   present=100.0%  missing=0
+2026-07-13 01:33:51 | INFO | M02 |   smoker               category   present=100.0%  missing=0
+2026-07-13 01:33:51 | INFO | M02 |   day                  category   present=100.0%  missing=0
+2026-07-13 01:33:51 | INFO | M02 |   time                 category   present=100.0%  missing=0
+2026-07-13 01:33:51 | INFO | M02 |   size                 int64      present=100.0%  missing=0
+2026-07-13 01:33:51 | INFO | M02 | Numeric summary (for spread / outliers):
+2026-07-13 01:33:51 | DEBUG | M02 | 
+       total_bill         tip        size
+count  244.000000  244.000000  244.000000
+mean    19.785943    2.998279    2.569672
+std      8.902412    1.383638    0.951100
+min      3.070000    1.000000    1.000000
+25%     13.347500    2.000000    2.000000
+50%     17.795000    2.900000    2.000000
+75%     24.127500    3.562500    3.000000
+max     50.810000   10.000000    6.000000
+2026-07-13 01:33:51 | INFO | M02 | Constructing features (vectorized, none are derived from the target)
+2026-07-13 01:33:51 | INFO | M02 | Added features: ['bill_per_person', 'is_weekend', 'party_size_class']
+2026-07-13 01:33:51 | DEBUG | M02 | Sample of constructed features:
+2026-07-13 01:33:51 | DEBUG | M02 | 
+   total_bill  size  bill_per_person  is_weekend party_size_class
+0       16.99     2         8.495000        True            small
+1       10.34     3         3.446667        True           medium
+2       21.01     3         7.003333        True           medium
+3       23.68     2        11.840000        True            small
+4       24.59     4         6.147500        True           medium
+2026-07-13 01:33:51 | INFO | M02 | ========================
+2026-07-13 01:33:51 | INFO | M02 | SUMMARY
+2026-07-13 01:33:51 | INFO | M02 | ========================
+2026-07-13 01:33:51 | INFO | M02 | Dataset:          tips
+2026-07-13 01:33:51 | INFO | M02 | Original columns: 7
+2026-07-13 01:33:51 | INFO | M02 | After features:   10
+2026-07-13 01:33:51 | INFO | M02 | Intended target:  tip
+2026-07-13 01:33:51 | INFO | M02 | ========================
+2026-07-13 01:45:37 | INFO | M02 | === RUN START ===
+2026-07-13 01:45:37 | INFO | M02 | project=M02
+2026-07-13 01:45:37 | INFO | M02 | repo_dir=ml-02-features
+2026-07-13 01:45:37 | INFO | M02 | python=3.14.6
+2026-07-13 01:45:37 | INFO | M02 | os=Darwin 23.6.0
+2026-07-13 01:45:37 | INFO | M02 | shell=zsh
+2026-07-13 01:45:37 | INFO | M02 | cwd=notebooks
+2026-07-13 01:45:37 | INFO | M02 | github_actions=False
+2026-07-13 01:45:37 | INFO | M02 | Confirming installation:
+2026-07-13 01:45:37 | INFO | M02 |   python:       3.14.6
+2026-07-13 01:45:37 | INFO | M02 |   pandas:       3.0.3
+2026-07-13 01:45:37 | INFO | M02 |   numpy:        2.5.1
+2026-07-13 01:45:37 | INFO | M02 |   scikit-learn: 1.9.0
+2026-07-13 01:45:37 | INFO | M02 |   seaborn:      0.13.2
+2026-07-13 01:45:37 | INFO | M02 |   matplotlib:   3.11.0
+2026-07-13 01:45:37 | INFO | M02 | Loading dataset: tips
+2026-07-13 01:45:37 | INFO | M02 | Loaded: 244 rows (instances), 7 columns
+2026-07-13 01:45:37 | INFO | M02 | The intended target is 'tip'.
+2026-07-13 01:45:37 | INFO | M02 | Any feature derived FROM the target would leak the answer. Avoid those.
+2026-07-13 01:45:37 | INFO | M02 | Per-column completeness and type:
+2026-07-13 01:45:37 | INFO | M02 |   total_bill           float64    present=100.0%  missing=0
+2026-07-13 01:45:37 | INFO | M02 |   tip                  float64    present=100.0%  missing=0
+2026-07-13 01:45:37 | INFO | M02 |   sex                  category   present=100.0%  missing=0
+2026-07-13 01:45:37 | INFO | M02 |   smoker               category   present=100.0%  missing=0
+2026-07-13 01:45:37 | INFO | M02 |   day                  category   present=100.0%  missing=0
+2026-07-13 01:45:37 | INFO | M02 |   time                 category   present=100.0%  missing=0
+2026-07-13 01:45:37 | INFO | M02 |   size                 int64      present=100.0%  missing=0
+2026-07-13 01:45:37 | INFO | M02 | Numeric summary (for spread / outliers):
+2026-07-13 01:45:37 | DEBUG | M02 | 
+       total_bill         tip        size
+count  244.000000  244.000000  244.000000
+mean    19.785943    2.998279    2.569672
+std      8.902412    1.383638    0.951100
+min      3.070000    1.000000    1.000000
+25%     13.347500    2.000000    2.000000
+50%     17.795000    2.900000    2.000000
+75%     24.127500    3.562500    3.000000
+max     50.810000   10.000000    6.000000
+2026-07-13 01:45:37 | INFO | M02 | Constructing features (vectorized, none are derived from the target)
+2026-07-13 01:45:37 | INFO | M02 | Added features: ['bill_per_person', 'is_weekend', 'party_size_class']
+2026-07-13 01:45:37 | DEBUG | M02 | Sample of constructed features:
+2026-07-13 01:45:37 | DEBUG | M02 | 
+   total_bill  size  bill_per_person  is_weekend party_size_class
+0       16.99     2         8.495000        True            small
+1       10.34     3         3.446667        True           medium
+2       21.01     3         7.003333        True           medium
+3       23.68     2        11.840000        True            small
+4       24.59     4         6.147500        True           medium
+2026-07-13 01:45:37 | INFO | M02 | ========================
+2026-07-13 01:45:37 | INFO | M02 | SUMMARY
+2026-07-13 01:45:37 | INFO | M02 | ========================
+2026-07-13 01:45:37 | INFO | M02 | Dataset:          tips
+2026-07-13 01:45:37 | INFO | M02 | Original columns: 7
+2026-07-13 01:45:37 | INFO | M02 | After features:   10
+2026-07-13 01:45:37 | INFO | M02 | Intended target:  tip
+2026-07-13 01:45:37 | INFO | M02 | ========================
