@@ -86,7 +86,7 @@ open a machine terminal in your `Repos` folder:
 
 ```shell
 # Replace username with YOUR GitHub username.
-git clone https://github.com/username/ml-02-features
+git clone https://github.com/jaya-srini/ml-02-features
 
 cd ml-02-features
 code .
@@ -96,7 +96,7 @@ code .
 
 These are listed for convenience.
 For best results, follow the detailed instructions in
-[pro-analytics-02 guide](https://denisecase.github.io/pro-analytics-02/).
+https://jaya-srini.github.io/ml-02-features/.
 
 ```shell
 uv self update
